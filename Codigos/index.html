@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - ZSOLUTIONS IMPORT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* HEADER FIXO NO TOPO */
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        /* CONTAINER CENTRALIZADO */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding-top: 100px; /* Evita sobreposição com o header */
+            padding-bottom: 60px; /* Evita sobreposição com o footer */
+        }
+
+        .content {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        h2 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* BOTÃO "NOSSOS PRODUTOS" COM MAIS DESTAQUE */
+        .botao-produtos {
+            display: inline-block;
+            padding: 15px 25px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+            background: #0f638a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao-produtos:hover {
+            background: #094c6a;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER FIXO NO FINAL DA PÁGINA */
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .creditos {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+        }
+
+        .instagram-icon {
+            position: fixed;
+            bottom: 65px;
+            right: 15px;
+            font-size: 30px;
+            color: #E4405F;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .instagram-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/Imagens/logo.jpg" alt="Logo da Empresa" class="logo">
+        <h1>ZSOLUTIONS IMPORT</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Sobre Nós</h2>
+            <p>
+                A ZSOLUTIONS IMPORT nasceu com a missão de trazer inovação e qualidade para o mercado de equipamentos de cozinha. 
+                Trabalhamos com as melhores marcas e oferecemos soluções eficientes para restaurantes, hotéis e empresas que 
+                buscam excelência em seus serviços.
+            </p>
+            <p>
+                Com anos de experiência no setor, nos tornamos referência em importação e assistência técnica especializada, 
+                garantindo suporte técnico e atendimento de qualidade para nossos clientes.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>Contato</h2>
+            <p><i class="fas fa-phone"></i> (19) 98262-7118 | (39) 39206-46489</p>
+            <p><i class="fas fa-envelope"></i> zsolutionsimport@gmail.com</p>
+            <p>
+                <i class="fab fa-instagram"></i> 
+                <a href="https://www.instagram.com/zsolutionsimport/" target="_blank" style="color: #0f638a; text-decoration: none; font-weight: bold;">
+                    @zsolutionsimport
+                </a>
+            </p>
+            <a href="indexx.html" class="botao-produtos">🔹 Nossos Produtos 🔹</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ouvidoria: (xx) xxxxx-xxxx • Email: zsolutions@gmail.com </p>
+        <div class="creditos">Desenvolvido por Bernardo Zeppelin</div>
+        <a href="https://www.instagram.com/zsolutionsimport/" target="_blank" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
